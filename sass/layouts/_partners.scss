@@ -1,0 +1,45 @@
+/*Partners*/
+.clients-list {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 0px;
+    margin-bottom: 0px; 
+
+    &__item {
+        margin-right: 30px; 
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+        height: 92px;
+        margin: 0;   
+    
+        /*gap: 30px;*/
+
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+    }
+    &__item:last-child {
+        margin-right: 0;
+    }
+    &__link:hover, 
+    &__link:focus {   
+        border-color: #2196f3;
+    }
+    &__icon {
+        fill: #AFB1B8;
+        margin: 0;
+    
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms
+    }
+    &__link:hover &__icon,
+    &__link:focus &__icon  {
+        fill: #2196F3;   
+    }
+}

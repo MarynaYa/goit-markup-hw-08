@@ -1,0 +1,107 @@
+// team //
+.cosial-list {
+    display: flex;
+    justify-content: center;   
+    align-items: center;  
+    margin-top: 16px;
+    list-style: none;
+
+    &__item {
+    margin-right: 10px;  
+     }
+    &__item:last-child {
+        margin-right: 0px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;   
+        width: 44px;
+        height: 44px;
+        background-color: var(--bgr-color);     
+        border-radius: 50%;  
+    
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+    }
+    &__link:hover, &__link:focus {
+        background-color: var(--accent-text);
+        border: 1px solid #FFFFFF;
+    }  
+
+    &__icon {
+        fill: #AFB1B8;
+
+        transition-property: fill;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+    }
+    &__link:hover &__icon, &__link:focus &__icon {
+        fill: #FFFFFF;
+    }
+}
+
+// footer //
+
+.join {
+    display: block;
+    padding: 0;   
+    margin-left: 0;
+    margin-right: 93px;  
+    width: 206px; 
+}
+.join-list {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+ 
+    &__item {
+        margin-right: 10px;
+    }
+    &__item:last-child {
+        margin-right: 0px;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;   
+        width: 44px;
+        height: 44px;
+        background-color: #FFFFFF1A;
+    
+        border-radius: 50%;  
+        
+        transition-property: background-color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+    }
+    &__link:hover, &__link:focus {
+        background-color: var(--accent-text);   
+    }
+    &__icon {
+        fill:  #FFFFFF;
+        padding: 0;
+    
+        transition-property: fill;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+    }
+    &__icon:hover, &__icon:focus {
+        fill: #FFFFFF;   
+    }
+}
+.join__titl {
+    margin-bottom: 20px;
+    
+    color: var(--bgr-color); 
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+}

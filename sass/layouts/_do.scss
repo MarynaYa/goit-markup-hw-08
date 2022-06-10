@@ -1,0 +1,36 @@
+ /*DO*/
+ .section.no-padding {
+    padding-top: 0;   
+}
+.do-list {
+    display: flex;
+ 
+    &__item {
+        position: relative;
+        display: flex;
+        margin-right: 30px;
+    }
+    &__item:last-child {
+        margin-right: 0;
+    }
+}
+.do-thumb {
+    position: absolute;
+    left: 0;
+    bottom: 0;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+
+    &__text {    
+        color: #FFFFFF;  
+        font-size: 14px;
+        line-height: 1.17;
+        font-weight: 700;  
+        text-align: center;
+        text-transform: uppercase;
+    }
+}

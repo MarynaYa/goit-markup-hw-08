@@ -1,0 +1,62 @@
+/*Footer*/
+.footer {
+    display: flex;
+     background-color: #2F303A; 
+ }
+ .footer-conteiner {
+     display: flex;
+     justify-content: flex-start;
+     align-items: baseline;
+     padding-top: 60px;
+     padding-bottom: 60px;
+     padding-left: 0;
+     padding-right: 0;
+ }
+ .box-logo {
+     display: block;
+     justify-content: flex-start;   
+     margin-right: 70px;
+     padding: 0;
+ }
+
+ .adress { 
+     margin-top: 0;
+     margin-bottom: 9px;
+     padding: 0;
+     color: var(--herotitle);
+     font-size: 14px;
+     line-height: 1.7; 
+ }
+ .adress-mail {
+     display: block;
+     margin-bottom: 9px;
+     padding: 0;
+ 
+     color: rgba(255, 255, 255, 0.6);
+     font-size: 14px;
+     line-height: 1.71;
+     text-decoration: none;
+ }
+ .adress-tel {
+     display: block;
+     margin: 0;
+     color: rgba(255, 255, 255, 0.6);
+     font-size: 14px;
+     line-height: 1.71;
+     text-decoration: none;
+ }
+ .title-footer {
+     color: var(--herotitle);
+ }
+
+ .mailing-titl {
+     margin-bottom: 20px;
+ 
+     color: var(--bgr-color);
+     font-size: 14px;
+     font-weight: 700;
+     line-height: 1.14;
+     text-align: left;
+     text-transform: uppercase;
+ }
+ 
