@@ -10,7 +10,18 @@
     .site-list {
         display: none;
     }
+    .header-menu__btn {
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;      
+    }
+    .header-menu__icon-cross {
+        display: none;
+    }
 }
+
     
 @media screen and (min-width: 768px) {
     .main-div {
@@ -115,6 +126,9 @@
             fill: var(--accent-text);
         }
     }
+    .header-menu__btn {
+        display: none;
+    }
     }
 
 @media screen and (min-width: 1200px) {
@@ -170,6 +184,9 @@
     &__link--current {
     color: var(--accent-text);   
 }
+    .header-menu__btn {
+        display: none;
+    }
 }
 
 .site-list {
