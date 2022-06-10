@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -16,10 +16,15 @@
   <!--Cap-->
     <header class="page-header">
         <div class="conteiner main-div">
+            <a href="" class="logo">Web<span class="logo__title"> Studio</span>
+            </a>
+            <button class="header-menu__btn" type="button" aria-expanded="true" aria-controls="menu-conteiner" data-menu-button>
+                <svg>
+                    <use></use>
+                </svg>
+            </button>
             <nav class="navigation">
-                <a href="" class="logo">Web<span class="navigation__title"> Studio</span>
-                </a>
-                   <ul class="site-nav list">
+                    <ul class="site-nav list">
                        <li class="site-nav__item">                                                                       
                            <a class="site-nav__link site-nav__link--current" href="./index.html">Студия</a></li>
                        <li class="site-nav__item">
@@ -295,39 +300,43 @@
                      </div>                     
                     </li>
                     <li class="team-list__item">
-                     <img class="team-list__img" src="./images/images1/mih.jpg" alt="Михаил Ермаков">
-                     <div class="team-box">
-                        <h3 class="team-box__title">Михаил Ермаков</h3>
-                        <p class="team-box__text">UI Designer</p>
-                        <ul class="cosial-list list">
-                            <li class="cosial-list__item">
-                                <a class="cosial-list__link" href aria-label="instagram" target="_blank">
-                                    <svg class="cosial-list__icon" width="20" height="20">
-                                        <use href="./images/sprite-socialnetwork.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="cosial-list__item">
-                                <a class="cosial-list__link" href aria-label="twitter" target="_blank">
-                                    <svg class="cosial-list__icon"  width="20" height="20">
-                                        <use href="./images/sprite-socialnetwork.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="cosial-list__item">
-                                <a class="cosial-list__link" href aria-label="facebook" target="_blank">
-                                    <svg class="cosial-list__icon"  width="20" height="20">
-                                        <use href="./images/sprite-socialnetwork.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="cosial-list__item">
-                                <a class="cosial-list__link" href aria-label="linkedin" target="_blank">
-                                    <svg class="cosial-list__icon"  width="20" height="20">
-                                        <use href="./images/sprite-socialnetwork.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
+                        <img class="team-list__img" src="./images/images1/mih.jpg" alt="Михаил Ермаков">
+                        <div class="team-box">
+                           <h3 class="team-box__title">Михаил Ермаков</h3>
+                           <p class="team-box__text">UI Designer</p>
+                           <ul class="cosial-list list">
+                               <li class="cosial-list__item">
+                                   <a class="cosial-list__link" href aria-label="instagram" target="_blank">
+                                       <svg class="cosial-list__icon" width="20" height="20">
+                                           <use href="./images/sprite-socialnetwork.svg#icon-instagram"></use>
+                                       </svg>
+                                   </a>
+                               </li>
+                               <li class="cosial-list__item">
+                                   <a class="cosial-list__link" href aria-label="twitter" target="_blank">
+                                       <svg class="cosial-list__icon"  width="20" height="20">
+                                           <use href="./images/sprite-socialnetwork.svg#icon-twitter"></use>
+                                       </svg>
+                                   </a>
+                               </li>
+                               <li class="cosial-list__item">
+                                   <a class="cosial-list__link" href aria-label="facebook" target="_blank">
+                                       <svg class="cosial-list__icon"  width="20" height="20">
+                                           <use href="./images/sprite-socialnetwork.svg#icon-facebook"></use>
+                                       </svg>
+                                   </a>
+                               </li>
+                               <li class="cosial-list__item">
+                                   <a class="cosial-list__link" href aria-label="linkedin" target="_blank">
+                                       <svg class="cosial-list__icon"  width="20" height="20">
+                                           <use href="./images/sprite-socialnetwork.svg#icon-linkedin"></use>
+                                       </svg>
+                                   </a>
+                               </li>
+                           </ul>
+                        </div>                     
+                       </li>
+                   
                         </ul>
                      </div>                  
                     </li>
@@ -379,7 +388,7 @@
                         </svg>
                     </a>
                 </li>
-                <li class="clients-item">
+                <li class="clients-list__item">
                     <a class="clients-list__link" href="">
                         <svg class="clients-list__icon" width="106" height="60">
                             <use href="./images/sprite-partners.svg#icon-group6">                              
@@ -392,7 +401,7 @@
     </section>
 </main>
   <!--Attic-->
-    <footer class="footer">    
+    <footer class="footer section">    
         <div class="conteiner footer-conteiner">
             <div class="box-logo">
                 <a href="" class="logo-footer">
@@ -406,7 +415,7 @@
                     <a href="tel:+380961111111" class="adress-tel">+38 096 111 11 11</a>
                 </div>
             </div>
-                <div class="conteiner join">
+                <div class="join">
                 <h2 class="join__titl">присоединяйтесь</h2>
                 <ul class="join-list list">
                     <li class="join-list__item">

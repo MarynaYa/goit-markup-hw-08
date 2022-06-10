@@ -17,8 +17,8 @@
             text-align: center;
         
             &__title {
-                width: 696px;  
-                margin-bottom: 30px;
+             
+                 margin-bottom: 30px;
                 margin-top: 0px;
                 margin-left: auto;
                 margin-right: auto;
@@ -30,8 +30,27 @@
                 letter-spacing: 0.06em;
                 text-transform: uppercase;
                 text-align: center;
+
+            @media screen and (min-width: 480px) {
+                width: 360px;
+                font-weight: 900;
+                font-size: 26px;
+                line-height: 1.71;
+            }
+            @media screen and (min-width: 768px) {
+                width: 360px;
+                font-weight: 900;
+                font-size: 26px;
+                line-height: 1.71;
+            }
+            @media screen and (min-width: 1200px) {
+                width: 696px;
+                font-weight: 900;
+                font-size: 44px;
+                line-height: 1.36;
             }
     }
+}
     
  
         

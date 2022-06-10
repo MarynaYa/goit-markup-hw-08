@@ -1,38 +1,66 @@
 /*Footer*/
 @media screen and (min-width: 480px) {
     .footer {
-        background-color: #2F303A; 
+        background-color: hsl(235, 10%, 21%); 
      }
      .footer-conteiner {
-    
-         padding-top: 60px;
-         padding-bottom: 60px;
-         padding-left: 0;
-
-
+       text-align: center;  
          
-         padding-right: 0;
      }
+     .box-logo {
+        text-align: center;      
+        padding: 0;
+        margin-bottom: 60px;       
+    }
+    .mailing-form {
+        width: 100%;
+        justify-content: center;  
+        margin-top: 60px;
+    }
+    .mailing-titl {
+        text-align: center;
+    }
+    .footer-text {
+        display: block;      
+        justify-content: center;   
+        margin: 0;
+        padding: 0;
+    }
 }
+
+
+
 @media screen and (min-width: 768px) {
-    .footer {
-        display: flex;
+    .footer {      
         background-color: #2F303A; 
      }
      .footer-conteiner {
-        /* display: flex;
-         justify-content: flex-start;
-         align-items: baseline;*/
-         padding-top: 60px;
-         padding-bottom: 60px;
-         padding-left: 0;
-         padding-right: 0;
-     }
-    
-}
-@media screen and (min-width: 1200px) {
-    .footer {
         display: flex;
+         justify-content: space-around;
+         align-items: baseline;
+         flex-wrap: wrap;
+          }
+     .box-logo {
+        text-align: center;      
+        padding: 0;
+       
+    }
+    .mailing-form {
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .footer-text {
+        display: block;
+       align-self: center;
+    }    
+    .mailing-titl {
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .footer {     
          background-color: #2F303A; 
      }
      .footer-conteiner {
@@ -40,24 +68,23 @@
          justify-content: flex-start;
          align-items: baseline;
       
-         padding-top: 60px;
-         padding-bottom: 60px;
-         padding-left: 0;
+        padding-left: 0;
          padding-right: 0;
      }
+     .mailing-titl {
+        text-align: left;
+    }
+    .box-logo {
+        display: block;
+        justify-content: flex-start;   
+        margin-right: 70px;
+        padding: 0;
+ }
 }
 
 
- .box-logo {
-     display: block;
-     justify-content: flex-start;   
-     margin-right: 70px;
-     padding: 0;
- }
-
- .adress { 
-     margin-top: 0;
-     margin-bottom: 9px;
+ .adress {   
+     margin: 0px 0px 9px 0px;
      padding: 0;
      color: var(--herotitle);
      font-size: 14px;
@@ -65,7 +92,7 @@
  }
  .adress-mail {
      display: block;
-     margin-bottom: 9px;
+     margin: 0px 0px 9px 0px;
      padding: 0;
  
      color: rgba(255, 255, 255, 0.6);
@@ -76,6 +103,7 @@
  .adress-tel {
      display: block;
      margin: 0;
+     padding: 0;
      color: rgba(255, 255, 255, 0.6);
      font-size: 14px;
      line-height: 1.71;
@@ -92,7 +120,6 @@
      font-size: 14px;
      font-weight: 700;
      line-height: 1.14;
-     text-align: left;
-     text-transform: uppercase;
+    text-transform: uppercase;
  }
  

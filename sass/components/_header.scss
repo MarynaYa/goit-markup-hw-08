@@ -3,7 +3,14 @@
 .page-header {
     border-bottom: 1px solid #ECECEC ;
 }
-
+@media screen and (min-width: 480px) {
+    .site-nav {
+        display: none;  
+    }
+    .site-list {
+        display: none;
+    }
+}
     
 @media screen and (min-width: 768px) {
     .main-div {
@@ -59,30 +66,31 @@
     }
     
     .site-list {
+        display: block;
         margin-left: auto;
-        list-style: none;    
+        list-style: none; 
+        margin-left: auto;   
     
         &__item {
             position: relative;
             display: flex;
             align-items: center;
+            flex-wrap: nowrap;
         }
         &__link {
             position: relative;
         }
         &__item:not(:last-child) {
-            margin-right: 50px;
+            margin-bottom: 10px;
         }
         &__link { 
         display: block;
-        padding-top: 32px;
-        padding-bottom: 32px; 
-       
+           
         color: var(--primary-text-color);
         font-family: inherit;  
         font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
+        font-size: 12px;
+        line-height: 1.16;
         letter-spacing: 0.02em;
         text-decoration: none; 
        
