@@ -257,7 +257,7 @@ textarea {
         letter-spacing: 0.03em;
         text-align: left;
     }
-    .subscriber-email {
+    .subscriber-email {        
         display: flex;
         max-width: 450px;
         height: 50px;
@@ -279,10 +279,12 @@ textarea {
 @media screen and (min-width: 1200px) {
     .subscriber-form {
     position: relative;
-    display: flex;
+    display: inline-flex;
     flex-wrap: nowrap;
-    width: 570px;
-    margin-left: auto;
+    justify-content: flex-start;
+    width: 100%;
+   margin: 0;
+   padding: 0;
     text-align: start;
 
 }
@@ -303,10 +305,10 @@ textarea {
 }
 .subscriber-email {
     display: flex;
-    width: 358px;
-    height: 50px;
-    margin-right: 12px; 
-    padding-left: 16px;
+    justify-content: flex-start;
+    width: 350px;
+    height: 50px; 
+   
     padding-top: 12px;
     padding-bottom: 12px;
     outline: none;
