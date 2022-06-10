@@ -1,6 +1,24 @@
  /*DO*/
+ @media screen and (min-width: 480px) {
+    .section.no-padding {
+      display: none;
+        }
+ }
+
+ @media screen and (min-width: 768px) {
+    .section.no-padding {
+       display: none;
+    }
+ }
+
+
+
+ @media screen and (min-width: 1200px) {
+      
  .section.no-padding {
-    padding-top: 0;   
+    padding-top: 0;
+    display: block;
+   
 }
 .do-list {
     display: flex;
@@ -8,6 +26,7 @@
     &__item {
         position: relative;
         display: flex;
+        width: calc((1200px - 3 * 30px) / 3);
         margin-right: 30px;
     }
     &__item:last-child {
@@ -34,3 +53,4 @@
         text-transform: uppercase;
     }
 }
+ }

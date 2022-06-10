@@ -1,17 +1,53 @@
 /*Footer*/
-.footer {
-    display: flex;
-     background-color: #2F303A; 
- }
- .footer-conteiner {
-     display: flex;
-     justify-content: flex-start;
-     align-items: baseline;
-     padding-top: 60px;
-     padding-bottom: 60px;
-     padding-left: 0;
-     padding-right: 0;
- }
+@media screen and (min-width: 480px) {
+    .footer {
+        background-color: #2F303A; 
+     }
+     .footer-conteiner {
+    
+         padding-top: 60px;
+         padding-bottom: 60px;
+         padding-left: 0;
+
+
+         
+         padding-right: 0;
+     }
+}
+@media screen and (min-width: 768px) {
+    .footer {
+        display: flex;
+        background-color: #2F303A; 
+     }
+     .footer-conteiner {
+        /* display: flex;
+         justify-content: flex-start;
+         align-items: baseline;*/
+         padding-top: 60px;
+         padding-bottom: 60px;
+         padding-left: 0;
+         padding-right: 0;
+     }
+    
+}
+@media screen and (min-width: 1200px) {
+    .footer {
+        display: flex;
+         background-color: #2F303A; 
+     }
+     .footer-conteiner {
+         display: flex;
+         justify-content: flex-start;
+         align-items: baseline;
+      
+         padding-top: 60px;
+         padding-bottom: 60px;
+         padding-left: 0;
+         padding-right: 0;
+     }
+}
+
+
  .box-logo {
      display: block;
      justify-content: flex-start;   
