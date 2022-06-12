@@ -17,14 +17,22 @@
     <header class="page-header">
         <div class="conteiner main-div">
             <a href="" class="logo">Web<span class="logo__title"> Studio</span>
-            </a>
-            <button class="header-menu__btn" type="button" aria-expanded="true" aria-controls="menu-conteiner" data-menu-button>
+            </a> 
+
+            <nav class="navigation">
+            <button class="header-menu__btn is-open"   js-menu-container
+            type="button" 
+            aria-expanded="true" 
+            aria-controls="menu-conteiner" 
+            >
                 <svg class="header-menu__icon" width="24" height="24" aria-label="переключатель мобильного меню">
                     <use class="header-menu__icon-cross" href="./images/sprite-contact.svg#icon-close-black-18dp-2-1-1"></use>
                     <use class="header-menu__icon-menu" href="./images/sprite-contact.svg#icon-menu"></use>
                 </svg>
             </button>
-            <nav class="navigation">
+            <div class="menu-conteiner">
+
+            </div>
                     <ul class="site-nav list">
                        <li class="site-nav__item">                                                                       
                            <a class="site-nav__link site-nav__link--current" href="./index.html">Студия</a></li>
@@ -402,7 +410,7 @@
     </section>
 </main>
   <!--Attic-->
-    <footer class="footer section">    
+    <footer class="footer section no-padding">    
         <div class="conteiner footer-conteiner">
             <div class="box-logo">
                 <a href="" class="logo-footer">
@@ -464,6 +472,7 @@
         </div>        
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
 

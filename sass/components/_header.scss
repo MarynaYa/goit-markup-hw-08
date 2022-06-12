@@ -3,7 +3,12 @@
 .page-header {
     border-bottom: 1px solid #ECECEC ;
 }
+
 @media screen and (min-width: 480px) {
+    .main-div {
+        display: flex;
+        justify-content: space-between;
+    }
     .site-nav {
         display: none;  
     }
@@ -12,6 +17,7 @@
     }
     .header-menu__btn {
         display: inline-flex;
+     
         margin: 0;
         padding: 0;
         border: none;
@@ -20,6 +26,19 @@
     .header-menu__icon-cross {
         display: none;
     }
+    .header-menu__btn.is-open .header-menu__icon-cross {
+        display: block;
+    } 
+    .header-menu__btn.is-open .header-menu__icon-menu {
+        display: none;
+    }
+    .menu-conteiner {
+        background-color: #ffff;
+        padding: 0;
+        text-align: center;
+        font-size: 20px;
+    }
+
 }
 
     
@@ -136,6 +155,7 @@
 .main-div {
     display: flex;
     align-items: center; 
+    padding: 0;
     width: 1200px;
 }
 .navigation {
@@ -198,9 +218,11 @@
         position: relative;
         display: flex;
         align-items: center;
+        margin-bottom: 0;
     }
     &__link {
         position: relative;
+        margin-bottom: 0;
     }
     &__item:not(:last-child) {
         margin-right: 50px;

@@ -2,6 +2,8 @@
 @media screen and (min-width: 480px) {
     .footer {
         background-color: hsl(235, 10%, 21%); 
+        display: block;
+ 
      }
      .footer-conteiner {
        text-align: center;
@@ -29,7 +31,8 @@
 
 @media screen and (min-width: 768px) {
     .footer {      
-        background-color: #2F303A; 
+        background-color: #2F303A;
+        display: block; 
      }
      .footer-conteiner {
         display: flex;
@@ -58,6 +61,7 @@
 @media screen and (min-width: 1200px) {
     .footer {     
          background-color: #2F303A; 
+         display: block;
      }
      .footer-conteiner {
          display: flex;
@@ -88,19 +92,12 @@
         margin-right: 70px;
         padding: 0;        
 }
-.footer-text {
-    display: block;  
+.footer-text { 
     width: 231px;
-    padding: 0;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    margin-left: 0px; 
-    margin-right: 0px;     
 }
 }
 .footer-text {
     display: block;  
-    width: 231px;
     padding: 0;
     margin-top: 20px;
     margin-bottom: 0px;
@@ -134,7 +131,6 @@
      line-height: 1.71;
      text-decoration: none;
  }
-
 
  .mailing-titl {
      margin-bottom: 20px;
