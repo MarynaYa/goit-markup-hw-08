@@ -15,7 +15,7 @@
         margin-bottom: 60px;       
     }
     .mailing-form {
-      
+        
         justify-content: center;  
         margin-top: 60px;
     }
@@ -46,8 +46,9 @@
         padding: 0;       
     }
     .mailing-form {
+     
         justify-content: center;
-        margin-top: 30px;
+        margin-top: 60px;
     }
     .footer-text {
        width: auto;
@@ -64,6 +65,7 @@
          display: block;
      }
      .footer-conteiner {
+        width: 1200px;
          display: flex;
          justify-content: space-around;
          flex-wrap: nowrap;
@@ -74,11 +76,12 @@
      
      }  
      .mailing-form {
-        display: block;      
+      
         margin-top: 30px;
         width: 570px;
         margin-left: auto;
-        text-align: start
+       justify-content: flex-start;
+        
     }
 
      .mailing-titl {
@@ -134,7 +137,7 @@
 
  .mailing-titl {
      margin-bottom: 20px;
-      color: var(--bgr-color);
+     color: var(--bgr-color);
      font-size: 14px;
      font-weight: 700;
      line-height: 1.14;
