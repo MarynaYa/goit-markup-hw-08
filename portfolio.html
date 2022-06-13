@@ -16,34 +16,65 @@
     <!--Cap-->
     <header class="page-header">
         <div class="conteiner main-div">
-            <nav class="navigation">
-                <a href="" class="logo">Web<span class="navigation__title"> Studio</span>
-                </a>
-                   <ul class="site-nav list">
-                       <li class="site-nav__item">                                                                       
-                           <a class="site-nav__link" href="./index.html">Студия</a></li>
-                       <li class="site-nav__item">
-                           <a class="site-nav__link site-nav__link--current" href="./portfolio.html">Портфолио</a></li>
-                       <li class="site-nav__item">
-                           <a class="site-nav__link" href="./contact.html">Контакты</a></li>
-                   </ul>             
-            </nav>            
-                   <ul class="site-list list">
-                       <li class="site-list__item">  
-                        <a class="site-list__link" href="mailto:info@devstudio.com" class="header-text">                 
-                             <svg class="site-list__icon" width="16" height="12" >
-                                <use href="./images/sprite-contact.svg#icon-envelope"></use>
-                            </svg>  
-                            info@devstudio.com</a></li>
-                           
-                        <li class="site-list__item">
-                            <a class="site-list__link" href="tel:+380961111111" class="header-text">
-                            <svg class="site-list__icon" width="10" height="16" >
-                                 <use href="./images/sprite-contact.svg#icon-smartphone"></use>
-                             </svg>  
-                             +38 096 111 11 11</a></li>                                                                                                  
-                   </ul>
-        </div>    
+            <a href="" class="logo">Web<span class="logo__title"> Studio</span>
+            </a> 
+    
+            <button class="header-menu__btn" data-menu-button
+            type="button" 
+            aria-expanded="true" 
+            aria-controls="menu-conteiner" 
+            >
+                <svg class="header-menu__icon" width="24" height="24" aria-label="переключатель мобильного меню">
+                    <use class="header-menu__icon-cross" href="./images/sprite-contact.svg#icon-close-black-18dp-2-1-1"></use>
+                    <use class="header-menu__icon-menu" href="./images/sprite-contact.svg#icon-menu_24px"></use>
+                </svg>
+            </button>
+
+        <div class="header-menu" id="menu-conteiner" data-menu>
+           
+            <div class="header-menu__navigation">
+            <ul class="site-nav list">
+                <li class="site-nav__item">                                                                       
+                    <a class="site-nav__link site-nav__link" href="./index.html">Студия</a></li>
+                <li class="site-nav__item">
+                    <a class="site-nav__link site-nav__link--current" href="./portfolio.html">Портфолио</a></li>
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="./contact.html">Контакты</a></li>
+            </ul>             
+         </div>     
+         <div class="header-menu__contact">      
+            <ul class="site-list list">
+                <li class="site-list__item">  
+                 <a class="site-list__link-mail" href="mailto:info@devstudio.com" class="header-text">                 
+                      <svg class="site-list__icon" width="16" height="12" >
+                         <use href="./images/sprite-contact.svg#icon-envelope"></use>
+                     </svg>  
+                     info@devstudio.com</a></li>
+                    
+                 <li class="site-list__item">
+                     <a class="site-list__link-tell" href="tel:+380961111111" class="header-text">
+                     <svg class="site-list__icon" width="10" height="16" >
+                          <use href="./images/sprite-contact.svg#icon-smartphone"></use>
+                      </svg>  
+                      +38 096 111 11 11</a></li>                
+                 </ul>
+                 <ul class="site-social list">
+                    <li class="site-social__item">
+                        <a class="site-social__link" target="_blank" href="noopener noreferrer">Instagram</a>
+                    </li>
+                    <li class="site-social__item">
+                        <a class="site-social__link" target="_blank" href="noopener noreferrer">Twitter</a>
+                    </li>
+                    <li class="site-social__item">
+                        <a class="site-social__link" target="_blank" href="noopener noreferrer">Facebook</a>
+                    </li>
+                    <li class="site-social__item">
+                        <a class="site-social__link" target="_blank" href="noopener noreferrer">LinkedIn</a>
+                    </li>                                    
+                 </ul>
+         </div>
+        </div>              
+        </div>     
     </header>
   <!--Main-->
     <main>
@@ -66,7 +97,7 @@
             <ul class="project-list list">
                 <li class="project-list_item">
                     <div class="action">
-                        <img src="./images/images1/технокряк.jpg" alt="Макет Вєб-сайта" width="370" height="295">
+                        <img class="action-icon" src="./images/images1/технокряк.jpg" alt="Макет Вєб-сайта">
                         <p class="poster-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>
                     <div class="bloc">  
@@ -76,7 +107,7 @@
                 </li>
                 <li class="project-list_item">                    
                     <div class="action">
-                        <img src="./images/images1/ПостерNOGS.jpg" alt="Постер" width="370" height="295">
+                        <img class="action-icon" src="./images/images1/ПостерNOGS.jpg" alt="Постер">
                         <p class="poster-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>
                     <div class="bloc">
@@ -86,7 +117,7 @@
                 </li>
                 <li class="project-list_item">                    
                     <div class="action">
-                        <img src="./images/images1/РесторанSeafood.jpg" alt="Макет для ресторана" width="370" height="295">
+                        <img class="action-icon" src="./images/images1/РесторанSeafood.jpg" alt="Макет для ресторана">
                         <p class="poster-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>
                     <div class="bloc">
@@ -96,7 +127,7 @@
                 </li>
                 <li class="project-list_item">
                     <div class="action">
-                        <img src="./images/images1/ПроектBoxes.jpg" alt="коробочки" width="370" height="295">
+                        <img class="action-icon" src="./images/images1/ПроектBoxes.jpg" alt="коробочки">
                         <p class="poster-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>                     
                     <div class="bloc">
@@ -106,7 +137,7 @@
                 </li>
                 <li class="project-list_item">
                     <div class="action">
-                        <img src="./images/images1/ПроектBoxes.jpg" alt="коробочки" width="370" height="295">
+                        <img class="action-icon" src="./images/images1/ПроектBoxes.jpg" alt="коробочки">
                         <p class="poster-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>                   
                     <div class="bloc">  
@@ -116,7 +147,7 @@
                 </li>
                 <li class="project-list_item">
                     <div class="action">
-                        <img src="./images/images1/InspirationhasnoBorders.jpg" alt="монитор" width="370" height="295">
+                        <img class="action-icon" src="./images/images1/InspirationhasnoBorders.jpg" alt="монитор">
                         <p class="poster-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>                      
                     <div class="bloc">
@@ -126,7 +157,7 @@
                 </li>
                 <li class="project-list_item">
                     <div class="action">
-                        <img src="./images/images1/ИзданиеLimitedEdition.jpg" alt="журнал" width="370" height="295">
+                        <img class="action-icon" src="./images/images1/ИзданиеLimitedEdition.jpg" alt="журнал">
                         <p class="poster-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>                      
                     <div class="bloc">
@@ -136,7 +167,7 @@
                 </li>
                 <li class="project-list_item">
                     <div class="action">
-                        <img src="./images/images1/ПроектLAB.jpg" alt="пост-материал" width="370" height="295">
+                        <img class="action-icon" src="./images/images1/ПроектLAB.jpg" alt="пост-материал" >
                         <p class="poster-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>                      
                     <div class="bloc">
@@ -146,7 +177,7 @@
                 </li>
                 <li class="project-list_item">
                     <div class="action">
-                        <img src="./images/images1/GrowingBusiness.jpg" alt="ноут с веб-сайтом" width="370" height="295">
+                        <img class="action-icon" src="./images/images1/GrowingBusiness.jpg" alt="ноут с веб-сайтом">
                         <p class="poster-text-hover">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице</p>
                     </div>                     
                     <div class="bloc">
