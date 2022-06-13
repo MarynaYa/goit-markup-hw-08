@@ -5,14 +5,15 @@
 }
 
 @media screen and (min-width: 480px) {
-   
-  
-    .main-div {
-        position: relative;
+
+    .main-div {  
+        position: relative; 
         display: inline-flex;
         align-items: center;
         justify-content: space-around;
+        width: 100%;
     }
+
     .site-nav  {
         display: block; 
         margin-bottom: 300px; 
@@ -32,6 +33,9 @@
 
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-duration: 250ms;
+        }
+         &__link:current {
+            color: var(--accent-text);
         }
 }
     .site-list  {
@@ -98,7 +102,13 @@
         margin: 0;
         padding: 0;
         border: none;
-        background-color: transparent;      
+        background-color: transparent; 
+        z-index: 2; 
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+        
     }
     .header-menu__icon-cross {
         display: none;
@@ -110,42 +120,59 @@
     .header-menu__btn.is-open .header-menu__icon-menu {
         display: none;
     }
-    .header-menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;         
+    .header-menu__icon-cross:hover,
+    .header-menu__icon-cross:focus {
+        fill: var(--accent-text)
+    }
+    .header-menu {               
         background-color: #ffff;
-        padding: 20px 20px;
+        padding: 48px 40px;
         text-align: center;
         font-size: 20px;
         z-index: 1;
+       
+ @media screen and (max-width: 767px) {
+            display: none;
+            position: absolute;         
+            top: 0;
+            left: 0;
+            width: 100%;
+        
+      }
     }
     .header-menu.is-open {
-        display: block;
-        top: 0;
+        display: block;   
     }
-    .header-menu__navigation, 
+    /*.header-menu__navigation, 
     .header-menu__contact {
-        height: 40px;
-    }
+        height: 100%;
+    }*/
   
 }
 
     
 @media screen and (min-width: 768px) {
     .main-div {
-        display: inline-flex;
-        align-items: center; 
-    }
-    .navigation {
         display: flex;
-        margin: 0;
+        align-items: center; 
         padding: 0;
+        width: 768px;
+    }
+  
+    .header-menu {
+        display: flex;
+        align-items: center;  
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;       
+       
+    }
+    .header-menu__navigation {
+        display: flex;
     }
     .site-nav {
-        display: flex;  
+        display: flex;
+        margin-bottom: 0; 
         
         &__link {
         position: relative;
@@ -163,6 +190,7 @@
         }
         &__item:not(:last-child) {
             margin-right: 50px;
+            margin-bottom: 0;
         }
       
         &__link { 
@@ -187,12 +215,16 @@
         color: var(--accent-text);   
     }
     }
-    
+    .header-menu__contact {
+        display: flex;
+    }
     .site-list {
         display: block;
         margin-left: auto;
         list-style: none; 
-        margin-left: auto;   
+        margin-left: auto; 
+        margin-bottom: 0;  
+        margin-left: 84px;
     
         &__item {
             position: relative;
@@ -205,12 +237,12 @@
         }
         &__item:not(:last-child) {
             margin-bottom: 10px;
+            margin-top: 0;
         }
         &__link-mail,
         &__link-tell { 
-        display: block;
-        padding-top: 32px;
-        padding-bottom: 32px; 
+        display: flex;
+
        
         color: var(--primary-text-color);
         font-family: inherit;  
@@ -234,6 +266,7 @@
             color: var(--accent-text);   
         }
         &__icon {
+            display: block;
             fill: var(--text-color);
             margin-right: 10px;
         
@@ -248,30 +281,40 @@
         &__link-tell:focus &__icon {
             fill: var(--accent-text);
         }
-    }
-    .header-menu__btn {
+    }   
+    .site-social {
         display: none;
     }
-    .header-menu {
-        display: none;
+    .header-menu.is-open {
+        display: none;   
     }
+
     }
 
 @media screen and (min-width: 1200px) {
 
 .main-div {
     display: flex;
-    align-items: center; 
+    align-items: center;
+
     padding: 0;
     width: 1200px;
 }
-.navigation {
+
+.header-menu {
     display: flex;
-    margin: 0;
+    align-items: center;  
+    justify-content: space-around;
     padding: 0;
+    margin: 0;       
+   
+}
+.header-menu__navigation {
+    display: flex;
 }
 .site-nav {
-    display: flex;  
+    display: flex;
+    margin-bottom: 0; 
     
     &__link {
     position: relative;
@@ -289,11 +332,9 @@
     }
     &__item:not(:last-child) {
         margin-right: 50px;
-    }    
-    &__item:not(:last-child) {
         margin-bottom: 0;
     }
-
+  
     &__link { 
     display: block;
     padding-top: 32px;
@@ -315,23 +356,26 @@
     &__link--current {
     color: var(--accent-text);   
 }
-    .header-menu__btn {
-        display: none;
-    }
-   
-    .header-menu {
-        display: none;
-    }
 }
+.header-menu__contact {
+    display: flex;
+    justify-content: end;
 
+}
 .site-list {
-    display: flex; 
+    display: flex;   
+    flex-direction: row;
+
     margin-left: auto;
-    list-style: none;    
+    list-style: none;  
+    justify-content: baseline;  
+    margin-left: 305px;
+
 
     &__item {
         position: relative;
-        display: flex;
+        display: flex;  
+    
         align-items: center;
         margin-bottom: 0;
     }
@@ -342,13 +386,11 @@
     }
     &__item:not(:last-child) {
         margin-right: 50px;
+        margin-bottom: 0;        
     }
     &__link-mail,
     &__link-tell { 
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px; 
-   
+    display: flex;      
     color: var(--primary-text-color);
     font-family: inherit;  
     font-weight: 500;
@@ -371,6 +413,7 @@
         color: var(--accent-text);   
     }
     &__icon {
+        display: block;
         fill: var(--text-color);
         margin-right: 10px;
     
@@ -384,6 +427,9 @@
     &__link-tell:hover &__icon, 
     &__link-tell:focus &__icon {
         fill: var(--accent-text);
+    }
+    .site-social {
+        display: none;
     }
 }
 }
