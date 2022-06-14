@@ -44,7 +44,23 @@
 
 // filter //
   /*Filter button*/
-
+  @media screen and (min-width: 340px) {
+        
+    .filter-list { 
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: start;
+      list-style-type: none;
+      margin-top: 0;
+      margin-bottom: 38px;
+      padding: 0; 
+      
+      &__item {
+        margin-bottom: 12px;
+      }
+      }
+    }
   
   @media screen and (min-width: 480px) {
         

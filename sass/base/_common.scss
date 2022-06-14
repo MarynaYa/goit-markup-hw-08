@@ -5,6 +5,12 @@ body {
     font-family: Roboto;
     letter-spacing: 0.03em;
 }
+@media screen and (min-width: 340px) {
+    .section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
 
 @media screen and (min-width: 480px) {
     .section {

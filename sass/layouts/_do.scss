@@ -1,4 +1,9 @@
  /*DO*/
+ @media screen and (min-width: 340px) {
+    .do {
+      display: none;
+        }
+ }
  @media screen and (min-width: 480px) {
     .do {
       display: none;
