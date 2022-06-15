@@ -843,13 +843,30 @@ h1, h2, h3, p {
 
 }*/
 /*Модальное окно + ФОРМА*/
+@media screen and (min-width: 340px) and (max-width: 480px) {
+  .modal {
+    width: 340px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
   -webkit-box-shadow: 0px 4px 4px 0px #00000040;
           box-shadow: 0px 4px 4px 0px #00000040;
   background-color: var(--bgr-color);
