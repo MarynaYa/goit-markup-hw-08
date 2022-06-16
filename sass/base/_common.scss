@@ -8,20 +8,20 @@ body {
 @media screen and (min-width: 340px) {
     .section {
         padding-top: 40px;
-        padding-bottom: 40px;
+      /*  padding-bottom: 40px;*/
     }
 }
 
 @media screen and (min-width: 480px) {
     .section {
         padding-top: 60px;
-        padding-bottom: 60px;
+      padding-bottom: 60px;
     }
 }
 @media screen and (min-width: 768px) {
     .section {
         padding-top: 60px;
-        padding-bottom: 60px;
+       /* padding-bottom: 60px;*/
     }
 }
 @media screen and (min-width: 1200px) {
@@ -32,14 +32,24 @@ body {
 }
     
  .section-title { 
-        margin-top: 0;
-        margin-bottom: 50px;
-    
+        margin-top: 0;         
         color: var(--primary-text-color);    
-        font-weight: 700;
-        font-size: 36px;
+        font-weight: 700;      
         line-height: 1.17;
-        text-align: center;    
+        text-align: center;  
+        
+    @media screen and (min-width: 480px) {
+        margin-bottom: 30px; 
+        font-size: 28px;        
+    }
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px; 
+        font-size: 28px;
+    }  
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px; 
+        font-size: 36px;
+    }
     }
     .section-title.centered {
         text-align: center;  

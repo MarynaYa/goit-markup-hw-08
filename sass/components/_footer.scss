@@ -49,9 +49,12 @@
          justify-content: space-around;
          align-items: baseline;
          flex-wrap: wrap;
+         padding-left: 64px;
+         padding-right: 101px;
           }
      .box-logo {
-        margin-right: 70px;
+        margin-right: 165px;
+        margin-bottom: 0;
         text-align: center;      
         padding: 0;       
     }
@@ -73,6 +76,7 @@
     .footer {     
          background-color: #2F303A; 
          display: block;
+         padding-bottom: 0;
      }
      .footer-conteiner {
         width: 1200px;

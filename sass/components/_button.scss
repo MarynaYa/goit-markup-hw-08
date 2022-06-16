@@ -63,6 +63,7 @@
     }
   
   @media screen and (min-width: 480px) {
+
         
   .filter-list { 
     display: flex;
@@ -89,7 +90,7 @@
     justify-content: center;
     list-style-type: none;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     padding: 0;  
     }
     
@@ -102,17 +103,17 @@
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    justify-content: center;    
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding: 0;  
+
     }
     }
 
   .filter-list {
- 
-    list-style-type: none;
-    margin-top: 0;
-    margin-bottom: 50px;
-    padding: 0;      
-  
+      
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
 
