@@ -40,7 +40,8 @@
 @media screen and (min-width: 1200px) {
     .clients-list {
         display: flex;
-        flex-wrap: nowrap;          
+        flex-wrap: nowrap; 
+        margin: 0;         
    
     &__item {
         width: calc((100% - 6 * 30px) / 6);
